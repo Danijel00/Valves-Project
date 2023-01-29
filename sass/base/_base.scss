@@ -1,0 +1,92 @@
+/*=============== BREAKPOINTS ===============*/
+
+$bp-large: 62em; //992px / 16px = 60.5em
+$bp-medium: 48em; //768px / 16px = 48em
+$bp-small: 37em; //592px / 16px = 37em
+$bp-smaller: 26.75em; //428px / 16px = 26.75em
+$bp-tiny: 20em; // 320 / 16px = 20em
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+button {
+  border: none;
+  // 22px
+  line-height: var(--fs-650);
+  // 600
+  font-weight: var(--fw-semi-bold);
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+/* Set core body defaults */
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: var(--ff-body);
+  overflow-x: hidden;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

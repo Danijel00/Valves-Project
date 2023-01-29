@@ -1,0 +1,224 @@
+.footer {
+  margin-top: 48px;
+
+  &__logo {
+    margin-bottom: 31.37px;
+  }
+
+  &__info {
+    margin-bottom: 24px;
+  }
+
+  &__social {
+    display: flex;
+    column-gap: 13px;
+    margin-bottom: 41px;
+
+    &-box {
+      display: flex;
+      align-items: center;
+      column-gap: 18px;
+    }
+  }
+
+  &__guide {
+    display: flex;
+    column-gap: 16px;
+    margin-bottom: 47px;
+  }
+
+  &__main {
+    &-box {
+      border-bottom: 0.5px solid var(--clr-grey-700);
+      padding: 2rem 0;
+      //   width: 100%;
+
+      &:first-child {
+        border-top: 0.5px solid var(--clr-grey-700);
+      }
+    }
+    // main info font size
+    &-info {
+      display: flex;
+      justify-content: space-between;
+      font-size: 21px;
+      line-height: 29px;
+      font-weight: 500;
+      cursor: pointer;
+
+      & > button {
+        background: none;
+      }
+    }
+
+    &-chevron {
+      transition: transform 0.4s ease;
+
+      &.active-chevron {
+        transform: rotate(180deg);
+      }
+    }
+
+    &-menu {
+      display: none;
+      opacity: 0;
+
+      &.active-content {
+        display: block;
+        opacity: 1;
+      }
+    }
+
+    &-item {
+      width: 100%;
+      margin-bottom: 25px;
+      margin-top: 33px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      & > a {
+        display: flex;
+        align-items: center;
+        color: var(--clr-grey-600);
+        line-height: 22px;
+        font-size: 16px;
+
+        &::before {
+          content: '';
+          display: inline-block;
+          height: 12px;
+          width: 7px;
+          margin-right: 13px;
+          background-image: url(../../assets/img/svg/footer/chevron-right.svg);
+          background-size: cover;
+
+          &:not(:last-child) {
+            background-image: url(../../assets/img/svg/footer/guide-1.svg);
+          }
+        }
+      }
+    }
+  }
+
+  &__bottom {
+    &-btn-up {
+      display: grid;
+      place-content: center;
+      margin-left: auto;
+      height: 44px;
+      width: 44px;
+      margin-top: 44px;
+      margin-bottom: 41px;
+    }
+  }
+
+  &__copyright {
+    display: grid;
+    place-items: center;
+    color: var(--clr-grey-600);
+
+    &-year {
+      padding-top: 24px;
+      margin-bottom: 20px;
+    }
+    &-cards {
+      display: flex;
+      margin-bottom: 34px;
+    }
+  }
+
+  &__line {
+    background-color: var(--clr-grey-700);
+    height: 2px;
+  }
+}
+
+// RESPONSIVE MEDIA
+.footer {
+  /* Desktops and laptops  */
+  @media (min-width: 1224px) {
+    margin-top: 71px;
+
+    &__container {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 29px;
+    }
+
+    &__intro {
+      flex-basis: 20%;
+    }
+
+    &__main {
+      display: flex;
+      flex-basis: 70%;
+      justify-content: space-between;
+      column-gap: 1rem;
+
+      &-item {
+        margin-bottom: 1rem;
+        margin-top: 21px;
+      }
+
+      &-box {
+        border-bottom: none;
+        padding: 0;
+
+        &:first-child {
+          border-top: none;
+        }
+      }
+    }
+    &__bottom {
+      margin-top: auto;
+      &-btn-up {
+        margin-bottom: 0;
+      }
+    }
+
+    &__copyright {
+      grid-auto-flow: column;
+      justify-content: space-between;
+      width: 100%;
+
+      &-year {
+        padding-top: 24px;
+        margin-bottom: 20px;
+      }
+      &-cards {
+        display: flex;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__main {
+    /* iPads portrait, Desktops and laptops  */
+    @media (min-width: 768px) and (max-width: 1224px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+
+      &-box {
+        border-top: 0.5px solid var(--clr-grey-700);
+        border-bottom: none;
+      }
+    }
+
+    // Main footer content
+    @media (min-width: 480px) {
+      &-menu {
+        display: block;
+        opacity: 1;
+      }
+      &-info {
+        pointer-events: none;
+      }
+      // Chevron down icon
+      &-chevron {
+        display: none;
+      }
+    }
+  }
+}

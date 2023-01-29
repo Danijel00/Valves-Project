@@ -1,0 +1,113 @@
+.guide {
+  // 130px
+  --_fs-130: 8.125rem;
+  // 114px
+  --_fs-114: 7.125rem;
+  // 64px
+  --_fs-64: 4rem;
+  // 47px
+  --_fs-47: 2.9375rem;
+  // 45px
+  --_fs-45: 2.8125rem;
+  // 42px
+  --_fs-42: 2.625rem;
+  // 41px
+  --_fs-41: 2.5625rem;
+  // 36px
+  --_fs-36: 2.25rem;
+  // 35px
+  --_fs-35: 2.1875rem;
+  // 31px
+  --_fs-31: 1.9375rem;
+  // 20.43px
+  --_fs-20-43: 1.276875rem;
+  // 19px
+  --_fs-19: 1.1875rem;
+
+  margin-top: 93px;
+
+  & > * p {
+    font-size: var(--fs-350);
+    line-height: var(--_fs-20-43);
+  }
+
+  &__box {
+    display: grid;
+    // ADD TO RESPONSIVE LATER
+    column-gap: 52px;
+    row-gap: var(--_fs-45);
+    margin-bottom: var(--_fs-64);
+
+    &-wrap {
+      display: flex;
+      column-gap: var(--fs-500);
+      height: 100%;
+    }
+
+    &-left--btn {
+      width: var(--_fs-114);
+      height: var(--_fs-42);
+    }
+    &-right--btn {
+      width: var(--_fs-130);
+      height: var(--_fs-42);
+    }
+
+    &-left,
+    &-right {
+      background-image: url(../../assets/img/svg/guide/guide-banner.svg);
+      background-size: contain;
+      background-position: center;
+      padding-left: var(--_fs-35);
+      padding-top: var(--_fs-47);
+      padding-bottom: var(--_fs-41);
+      padding-right: var(--_fs-36);
+      display: grid;
+      row-gap: var(--_fs-31);
+      justify-items: flex-start;
+
+      & > button {
+        background-color: var(--clr-blue);
+        // 16px
+        font-size: var(--fs-400);
+      }
+    }
+  }
+
+  &__bottom {
+    text-align: center;
+    margin-bottom: var(--_fs-64);
+
+    &-title {
+      padding-bottom: var(--_fs-19);
+    }
+
+    &-more {
+      display: block;
+      // 15px
+      font-size: var(--fs-350);
+      cursor: pointer;
+    }
+  }
+}
+
+// RESPONSIVE MEDIA
+.guide {
+  @media (min-width: 1024px) {
+    margin-top: 155px;
+    &__box {
+      margin-bottom: 155px;
+    }
+    &__bottom {
+      margin-bottom: 109px;
+    }
+  }
+  @media (min-width: 768px) {
+    &__bottom {
+      &-content {
+        max-width: 80%;
+        margin: auto;
+      }
+    }
+  }
+}

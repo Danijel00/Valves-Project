@@ -1,0 +1,114 @@
+.welcome {
+  // 53px
+  --_fs-53: 3.3125rem;
+  // 70px
+  --_fs-70: 4.375rem;
+  // 72px
+  --_fs-72: 4.5rem;
+
+  // 23px
+  margin-top: var(--fs-700);
+
+  &__container {
+    background-image: url(../../assets/img/svg/welcome/welcome-banner-sm.svg);
+    background-size: cover;
+    background-position: center;
+    // 53px
+    padding-top: var(--_fs-53);
+    // 35px
+    padding-left: var(--fs-950);
+    // 70px
+    padding-bottom: var(--_fs-70);
+
+    &-left {
+      display: inline-block;
+      width: min-content;
+      // 35px
+      padding-bottom: var(--_fs-72);
+
+      &--title {
+        margin-bottom: 0.3rem;
+        //43px
+        line-height: 2.6875rem;
+      }
+      &--subtitle {
+        margin-bottom: var(--fs-750);
+        //22px
+        line-height: var(--fs-650);
+      }
+      &--btn {
+        width: 7.5625rem;
+        height: 2.625rem;
+        background-color: var(--clr-yellow);
+      }
+    }
+
+    &-right {
+      display: grid;
+      row-gap: 1.875rem;
+      width: max-content;
+
+      &--box {
+        @include box;
+      }
+
+      &--icon {
+        grid-row: 1 / span 2;
+      }
+    }
+  }
+}
+
+// RESPONSIVE MEDIA
+.welcome {
+  // 23px
+  margin-top: 32px;
+  @media (min-width: 968px) {
+    &__container {
+      background-image: url(../../assets/img/svg/welcome/welcome-banner-lg.svg);
+      padding-bottom: 52px;
+      padding-left: 104px;
+
+      &-left {
+        height: fit-content;
+        padding-bottom: 0;
+
+        &--title {
+          font-size: 60px;
+          line-height: 68px;
+          margin-bottom: 15px;
+        }
+        &--subtile {
+          font-size: 22px;
+          line-height: 30px;
+          margin-bottom: 31px;
+        }
+        &--btn {
+          font-size: 16px;
+          width: 135px;
+          height: 46px;
+        }
+      }
+      &-right {
+        margin-right: 98px;
+        row-gap: 51px;
+      }
+    }
+  }
+  @media (min-width: 768px) and (max-width: 968px) {
+    &__container {
+      &-left {
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+      }
+      &-right {
+        display: grid;
+        row-gap: 1.875rem;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+        width: 100%;
+      }
+    }
+  }
+}

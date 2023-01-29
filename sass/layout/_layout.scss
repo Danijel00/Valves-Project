@@ -1,0 +1,17 @@
+.container {
+  --max-width: 1600px;
+  --padding: 0 1.25rem;
+  max-width: var(--max-width);
+  padding: var(--padding);
+  height: 100%;
+  margin-inline: auto;
+}
+
+.even-columns {
+  display: grid;
+
+  @media (min-width: 968px) {
+    grid-auto-flow: column;
+    justify-content: space-between;
+  }
+}

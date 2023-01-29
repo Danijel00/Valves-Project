@@ -1,0 +1,38 @@
+.facility {
+  --_fs-57: 3.5625rem;
+
+  background-image: url(../../assets/img/svg/facility/facility-banner-sm.svg);
+  background-size: auto;
+  background-position: center;
+
+  @media (min-width: 480px) {
+    background-image: url(../../assets/img/svg/facility/facility-banner-lg.svg);
+  }
+
+  &__container {
+    display: grid;
+    row-gap: var(--_fs-57);
+    padding-top: 66px;
+    padding-bottom: 64px;
+    grid-template-columns: repeat(2, max-content);
+    justify-content: space-evenly;
+    // grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+
+    @media (min-width: 50em) {
+      grid-auto-flow: column;
+      justify-content: space-between;
+    }
+
+    @media (max-width: 25em) {
+      grid-template-columns: max-content;
+    }
+  }
+
+  &__box {
+    @include box;
+
+    &-icon {
+      grid-row: 1 / span 2;
+    }
+  }
+}

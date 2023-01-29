@@ -1,0 +1,1103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CUSTOM STYLE -->
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="assets/js/index.js" defer></script>
+    <script src="assets/js/slider.js" defer></script>
+    <title>VALVESONLINE</title>
+  </head>
+  <body class="bg-clr-primary">
+    <header class="header">
+      <!-- ==== HEADER TOP ==== -->
+      <div class="header__top bg-clr-tertiary">
+        <div class="header__container container">
+          <div class="header__top-left">
+            <div class="header__top-left--box">
+              <img
+                src="assets/img/svg/header/call.svg
+          "
+                alt="call"
+              />
+              <a class="fw-medium">1300 887 880</a>
+            </div>
+          </div>
+          <div class="header__top-right">
+            <div class="header__top-right--box">
+              <img src="assets/img/svg/header/map.svg" alt="track-order" />
+              <a class="fw-medium">Track Order</a>
+            </div>
+
+            <div class="header__top-right--divider">&nbsp;</div>
+
+            <div class="header__top-right--box">
+              <img src="assets/img/svg/header/heart.svg" alt="wishlist" />
+              <a class="fw-medium">Wishlist</a>
+            </div>
+
+            <div class="header__top-right--divider">&nbsp;</div>
+
+            <div class="header__top-right--box">
+              <img src="assets/img/svg/header/enter.svg" alt="login/register" />
+              <a class="fw-medium">Login/Register</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==== HEADER MIDDLE ==== -->
+      <div class="header__middle" id="fixed-header">
+        <div class="header__container container">
+          <!-- HAMBURGER -->
+          <div class="header__middle-wrapper">
+            <button
+              type="button"
+              id="hamburger"
+              class="header__middle-btn header__middle-hamburger"
+            >
+              <img src="assets/img/svg/header/hamburger.svg" alt="hamburger" />
+            </button>
+
+            <!-- LOGO -->
+            <a href="#" class="header__middle-logo--fixed">
+              <picture>
+                <source
+                  media="(min-width: 880px)"
+                  srcset="assets/img/svg/header/logo-lg.svg"
+                />
+                <img
+                  class="header__middle-logo"
+                  src="assets/img/svg/header/logo-sm.svg"
+                  alt="logo"
+                />
+              </picture>
+            </a>
+          </div>
+          <!-- SEARCH -->
+          <form
+            method="post"
+            class="header__middle-form header__middle-form--fixed"
+            id="search-form"
+          >
+            <input
+              class="header__middle-input"
+              type="text"
+              placeholder="Search over 10,000+ Stocked product lines..."
+            />
+            <button
+              class="header__middle-input--btn"
+              type="submit"
+              id="search-btn"
+            >
+              SEARCH
+            </button>
+          </form>
+
+          <div class="header__middle-wrapper">
+            <div class="header__middle-search">
+              <button type="button" class="header__middle-btn">
+                <img src="assets/img/svg/header/search.svg" alt="search" />
+              </button>
+            </div>
+            <!-- USER -->
+
+            <div class="header__middle-user">
+              <button type="button" class="header__middle-btn">
+                <img src="assets/img/svg/header/user.svg" alt="user" />
+              </button>
+              <p class="fs-400 fw-semi-bold txt-clr-primary">My Account</p>
+              <p class="fs-200 txt-clr-primary fw-regular">Login</p>
+            </div>
+            <!-- CART -->
+            <div class="header__middle-cart">
+              <button type="button" class="header__middle-btn">
+                <img src="assets/img/svg/header/cart.svg" alt="cart" />
+                <span class="header__middle-count fw-semi-bold">0</span>
+              </button>
+              <p class="fs-400 fw-semi-bold txt-clr-primary">My Cart</p>
+              <p class="fs-200 txt-clr-primary fw-regular">$0.00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==== HEADER BOTTOM ==== -->
+      <div class="header__bottom bg-clr-secondary">
+        <div class="header__container container">
+          <div class="header__bottom-shop">
+            <img
+              src="assets/img/svg/header/hamburger-white.svg"
+              alt="hamburger-white"
+            />
+            <p>Shop By Category</p>
+            <nav class="header__bottom-shop--nav" aria-label>
+              <ul class="header__bottom-shop--menu">
+                <li>
+                  <a href="#"
+                    ><img
+                      src="assets/img/svg/header/actuator.svg"
+                      alt="actuator" />
+                    Actuators
+                    <img
+                      src="assets/img/svg/footer/chevron-right.svg"
+                      alt="chevron-right"
+                      class="header__bottom-shop--chevron"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img
+                      src="assets/img/svg/header/fitting.svg"
+                      alt="fitting" />
+                    Fittings
+                    <img
+                      src="assets/img/svg/footer/chevron-right.svg"
+                      alt="chevron-right"
+                      class="header__bottom-shop--chevron"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img
+                      src="assets/img/svg/header/flow-indic.svg"
+                      alt="flow-indicator" />Flow Indicators
+                    <img
+                      src="assets/img/svg/footer/chevron-right.svg"
+                      alt="chevron-right"
+                      class="header__bottom-shop--chevron"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img
+                      src="assets/img/svg/header/pneumatics.svg"
+                      alt="pneumatics" />Pneumatics
+                    <img
+                      src="assets/img/svg/footer/chevron-right.svg"
+                      alt="chevron-right"
+                      class="header__bottom-shop--chevron"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img
+                      src="assets/img/svg/header/gauges.svg"
+                      alt="gauges" />Gauges
+                    <img
+                      src="assets/img/svg/footer/chevron-right.svg"
+                      alt="chevron-right"
+                      class="header__bottom-shop--chevron"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img src="assets/img/svg/header/spares.svg" alt="spares" />
+                    Spares
+                    <img
+                      src="assets/img/svg/footer/chevron-right.svg"
+                      alt="chevron-right"
+                      class="header__bottom-shop--chevron"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img
+                      src="assets/img/svg/header/steam-traps.svg"
+                      alt="steam-traps"
+                    />Steam Traps</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><img
+                      src="assets/img/svg/header/strainers.svg"
+                      alt="strainers"
+                    />Strainers</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><img
+                      src="assets/img/svg/header/switches.svg"
+                      alt="switches"
+                    />
+                    Switches
+                    <img
+                      src="assets/img/svg/footer/chevron-right.svg"
+                      alt="chevron-right"
+                      class="header__bottom-shop--chevron"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img
+                      src="assets/img/svg/header/tubing.svg"
+                      alt="tubing"
+                    />Tubing</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><img src="assets/img/svg/header/valves.svg" alt="valves" />
+                    Valves
+                    <img
+                      src="assets/img/svg/footer/chevron-right.svg"
+                      alt="chevron-right"
+                      class="header__bottom-shop--chevron"
+                    />
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="header__bottom-divider">&nbsp;</div>
+
+          <nav class="header__bottom-nav txt-clr-secondary" aria-label>
+            <ul class="header__bottom-menu">
+              <li class="header__bottom-menu--item">
+                <a href="#">Home</a>
+              </li>
+              <li class="header__bottom-menu--item">
+                <a href="#"
+                  >References
+                  <img src="assets/img/svg/header/chevron-down.svg" alt=""
+                /></a>
+              </li>
+              <li class="header__bottom-menu--item"><a href="#">Blog</a></li>
+              <li class="header__bottom-menu--item">
+                <a href="#">About Us</a>
+              </li>
+              <li class="header__bottom-menu--item">
+                <a href="#">Contact Us</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="header__bottom-shipping">
+            <img
+              src="assets/img/svg/header/shipping.svg"
+              alt="shipping-truck"
+            />
+            <p class="fs-400 fw-semi-bold txt-clr-secondary">
+              Free Shipping Australia Wide
+            </p>
+          </div>
+
+          <!-- ==== HEADER SIDE MENU ==== -->
+          <nav class="header__sidenav" aria-label>
+            <div class="header__sidenav-top bg-clr-secondary">
+              <span class="fs-750 fw-medium txt-clr-secondary">Main Menu</span>
+              <img
+                src="assets/img/svg/sidemenu/close.svg"
+                id="close-menu"
+                class="header__sidenav-close"
+                alt="close-menu"
+              />
+            </div>
+            <div class="header__sidenav-menu bg-clr-primary">
+              <ul class="header__sidenav-middle fw-medium fs-500">
+                <li>
+                  <a href="#"
+                    >Shop By Category
+                    <img
+                      src="assets/img/svg/sidemenu/chevron-right.svg"
+                      alt="chevron-right"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a href="#"
+                    >References
+                    <img
+                      src="assets/img/svg/sidemenu/chevron-right.svg"
+                      alt="chevron-right"
+                    />
+                  </a>
+                </li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+
+              <ul
+                class="header__sidenav-bottom bg-clr-tertiary fw-regular fs-500"
+              >
+                <li>
+                  <a href="#"
+                    ><img
+                      src="assets/img/svg/sidemenu/enter.svg"
+                      alt="side-enter"
+                    />Login / Register</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><img
+                      src="assets/img/svg/sidemenu/heart.svg"
+                      alt="side-heart"
+                    />Wishlist</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><img
+                      src="assets/img/svg/sidemenu/map.svg"
+                      alt="side-map"
+                    />Track Order</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><img
+                      src="assets/img/svg/sidemenu/call.svg"
+                      alt="side-call"
+                    />1300 887 880</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- ==== HEADER END ==== -->
+
+    <!-- ==== MAIN ==== -->
+    <main>
+      <!-- ==== WELCOME SECTION ==== -->
+      <section class="welcome">
+        <div class="container">
+          <div class="welcome__container txt-clr-secondary">
+            <div class="even-columns">
+              <!-- LEFT COLUMN -->
+              <div class="welcome__container-left">
+                <h1
+                  class="welcome__container-left--title fs-title-primary fw-bold"
+                >
+                  WELCOME TO VALVESONLINE
+                </h1>
+                <p class="welcome__container-left--subtitle fs-550 fw-regular">
+                  All your valving needs at the click of a button
+                </p>
+                <button
+                  type="button"
+                  class="welcome__container-left--btn fs-400"
+                >
+                  Shop Now
+                </button>
+              </div>
+              <!-- RIGHT COLUMN -->
+              <div class="welcome__container-right">
+                <div class="welcome__container-right--box">
+                  <img
+                    src="assets/img/svg/welcome/award.svg"
+                    class="welcome__container-right--icon"
+                    alt="award"
+                  />
+                  <h3 class="fs-700 fw-bold">QUALITY</h3>
+                  <span class="fs-350">You Can Trust</span>
+                </div>
+                <div class="welcome__container-right--box">
+                  <img
+                    src="assets/img/svg/welcome/shield.svg"
+                    class="welcome__container-right--icon"
+                    alt="shield"
+                  />
+                  <h3 class="fs-700 fw-bold">FULL</h3>
+                  <span class="fs-350">Manufacturer’s Warranty</span>
+                </div>
+                <div class="welcome__container-right--box">
+                  <img
+                    src="assets/img/svg/welcome/despatch.svg"
+                    class="welcome__container-right--icon"
+                    alt="despatch"
+                  />
+                  <h3 class="fs-700 fw-bold">SAME DAY</h3>
+                  <span class="fs-350">Despatch</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==== POPULAR CATEGORIES SECTION ==== -->
+      <section class="popular">
+        <div class="container">
+          <h2 class="popular__title fs-title-secondary">Popular Categories</h2>
+          <!-- SLIDES -->
+          <div class="popular__slides popular__snaps-inline" id="slider'">
+            <!-- ITEM 1 -->
+            <div class="popular__slide" id="slide">
+              <div class="popular__item-1 popular__item">
+                <img src="assets/img/svg/popular/solenoid.svg" alt="solenoid" />
+                <span class="fs-700 fw-bold popular__item-name"
+                  >Solenoid Valves</span
+                >
+                <!-- <button class="fs-250">Shop Now</button> -->
+              </div>
+            </div>
+
+            <!-- ITEM 2 -->
+            <div class="popular__slide slide">
+              <div class="popular__item-2 popular__item">
+                <img
+                  src="assets/img/svg/popular/butterfly.svg"
+                  alt="butterfly"
+                />
+                <span class="fs-700 fw-bold popular__item-name"
+                  >Butterfly Valves</span
+                >
+              </div>
+            </div>
+
+            <!-- ITEM 3 -->
+            <div class="popular__slide slide">
+              <div class="popular__item-3 popular__item">
+                <img src="assets/img/svg/popular/ball.svg" alt="ball" />
+                <span class="fs-700 fw-bold popular__item-name"
+                  >Ball Valves</span
+                >
+              </div>
+            </div>
+
+            <!-- ITEM 4 -->
+            <div class="popular__slide slide">
+              <div class="popular__item-4 popular__item">
+                <img src="assets/img/svg/popular/check.svg" alt="check" />
+                <span class="fs-700 fw-bold popular__item-name"
+                  >Check Valves</span
+                >
+              </div>
+            </div>
+
+            <!-- ITEM 5 -->
+            <div class="popular__slide slide">
+              <div class="popular__item-5 popular__item">
+                <img src="assets/img/svg/popular/globe.svg" alt="globe" />
+                <span class="fs-700 fw-bold popular__item-name"
+                  >Globe Valves</span
+                >
+              </div>
+            </div>
+
+            <!-- ITEM 6 -->
+            <div class="popular__slide slide">
+              <div class="popular__item-6 popular__item">
+                <img src="assets/img/svg/popular/gate.svg" alt="gate" />
+                <span class="fs-700 fw-bold popular__item-name"
+                  >Gate Valves</span
+                >
+              </div>
+            </div>
+
+            <!-- SLIDER END -->
+          </div>
+        </div>
+      </section>
+
+      <!-- ==== SHOP BY CATEGORIES ==== -->
+      <section class="shop">
+        <div class="container">
+          <h2 class="shop__title fs-title-secondary">Shop By Category</h2>
+          <div class="shop__box">
+            <!-- CATEGORY-1 -->
+            <div class="shop__item">
+              <img src="assets/img/svg/shop-by/actuator.svg" alt="actuator" />
+              <p class="fs-500 fw-medium">Actuators</p>
+              <a class="fs-200 fw-bold txt-clr-tertiary">Shop All ></a>
+            </div>
+
+            <div class="shop__box-divider">&nbsp;</div>
+
+            <!-- CATEGORY-2 -->
+            <div class="shop__item">
+              <img src="assets/img/svg/shop-by/fitting.svg" alt="fitting" />
+              <p class="fs-500 fw-medium">Fittings</p>
+              <a class="fs-200 fw-bold txt-clr-tertiary">Shop All ></a>
+            </div>
+
+            <div class="shop__box-divider">&nbsp;</div>
+
+            <!-- CATEGORY-3 -->
+            <div class="shop__item">
+              <img
+                src="assets/img/svg/shop-by/flow-indicators.svg"
+                alt="flow-indicators"
+              />
+              <p class="fs-500 fw-medium">Flow Ind.</p>
+              <a class="fs-200 fw-bold txt-clr-tertiary">Shop All ></a>
+            </div>
+
+            <div class="shop__box-divider">&nbsp;</div>
+
+            <!-- CATEGORY-4 -->
+            <div class="shop__item">
+              <img
+                src="assets/img/svg/shop-by/pneumatics.svg"
+                alt="pneumatics"
+              />
+              <p class="fs-500 fw-medium">Pneumatics</p>
+              <a class="fs-200 fw-bold txt-clr-tertiary">Shop All ></a>
+            </div>
+
+            <div class="shop__box-divider">&nbsp;</div>
+
+            <!-- CATEGORY-5 -->
+            <div class="shop__item">
+              <img src="assets/img/svg/shop-by/gauges.svg" alt="gauges" />
+              <p class="fs-500 fw-medium">Gauges</p>
+              <a class="fs-200 fw-bold txt-clr-tertiary">Shop All ></a>
+            </div>
+
+            <div class="shop__box-divider">&nbsp;</div>
+
+            <!-- CATEGORY-6 -->
+            <div class="shop__item">
+              <img src="assets/img/svg/shop-by/spares.svg" alt="spares" />
+              <p class="fs-500 fw-medium">Spares</p>
+              <a class="fs-200 fw-bold txt-clr-tertiary">Shop All ></a>
+            </div>
+
+            <!-- CATEGORY-7 -->
+            <div class="shop__item">
+              <img
+                src="assets/img/svg/shop-by/steam-trap.svg"
+                alt="steam-trap "
+              />
+              <p class="fs-500 fw-medium">Steam Trap</p>
+              <a class="fs-200 fw-bold txt-clr-tertiary">Shop All ></a>
+            </div>
+
+            <div class="shop__box-divider">&nbsp;</div>
+
+            <!-- CATEGORY-8 -->
+            <div class="shop__item">
+              <img src="assets/img/svg/shop-by/strainers.svg" alt="strainers" />
+              <p class="fs-500 fw-medium">Strainers</p>
+              <a class="fs-200 fw-bold txt-clr-tertiary">Shop All ></a>
+            </div>
+
+            <div class="shop__box-divider">&nbsp;</div>
+
+            <!-- CATEGORY-9 -->
+            <div class="shop__item">
+              <img src="assets/img/svg/shop-by/switches.svg" alt="Switches" />
+              <p class="fs-500 fw-medium">Switches</p>
+              <a class="fs-200 fw-bold txt-clr-tertiary">Shop All ></a>
+            </div>
+
+            <div class="shop__box-divider">&nbsp;</div>
+
+            <!-- CATEGORY-10 -->
+            <div class="shop__item">
+              <img src="assets/img/svg/shop-by/tubing.svg" alt="tubing " />
+              <p class="fs-500 fw-medium">Tubing</p>
+              <a class="fs-200 fw-bold txt-clr-tertiary">Shop All ></a>
+            </div>
+
+            <div class="shop__box-divider">&nbsp;</div>
+
+            <!-- CATEGORY-11 -->
+            <div class="shop__item">
+              <img src="assets/img/svg/shop-by/valves.svg" alt="valves" />
+              <p class="fs-500 fw-medium">Valves</p>
+              <a class="fs-200 fw-bold txt-clr-tertiary">Shop All ></a>
+            </div>
+
+            <div class="shop__box-divider">&nbsp;</div>
+
+            <!-- CATEGORY-12 -->
+            <div class="shop__item">
+              <img src="assets/img/svg/shop-by/boxes.svg" alt="boxes" />
+              <p class="fs-500 fw-medium">New In</p>
+              <a class="fs-200 fw-bold txt-clr-tertiary">Shop All ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==== SHIPPING ==== -->
+      <section class="shipping">
+        <div class="container">
+          <article class="shipping__article">
+            <h3 class="fs-title-tertiary fw-semi-bold shipping__title">
+              Welcome to Valves Online - all of your valving needs at the click
+              of your finger
+            </h3>
+            <p class="fs-450 shipping__subtitle">
+              When it comes to control valves, Process Systems has been leading
+              the pack in Australia for more than 30 years. Aimed at providing
+              the best product and the best service at the best price, Process
+              Systems are the number one choice for valves in the country...
+            </p>
+          </article>
+
+          <div class="shipping__box txt-clr-secondary">
+            <div class="shipping__box-content">
+              <img src="assets/img/svg/shipping/truck.svg" alt="truck" />
+              <h2 class="fs-title-secondary fw-bold">
+                Free Shipping Australia Wide
+              </h2>
+              <p class="fw-regular">
+                We offer free delivery to all Australian regions and our
+                assistance with any other related requirements
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==== INFO ==== -->
+      <section class="info">
+        <div class="container info__container">
+          <!-- INFO BOX-1 -->
+          <div class="info__box">
+            <div class="info__box-img">
+              <img
+                src="assets/img/svg/valves-info/solenoid-valve.svg"
+                alt="solenoid-valve"
+              />
+            </div>
+            <div class="info__box-description dropdown">
+              <div class="info__box-select select">
+                <h3 class="fs-title-tertiary fw-bold info__box-title">
+                  Solenoid Valves
+                </h3>
+                <button type="button" class="info__box-btn chevron">
+                  <img
+                    src="assets/img/svg/valves-info/chevron-down.svg"
+                    alt="chevron-down"
+                  />
+                </button>
+              </div>
+              <p class="fs-350 info__box-description--content content">
+                Large range of solenoid valves including direct acting,
+                differential, high pressure, high temperature, explosion proof
+                along with the various body material options available.
+                Applications include solenoid valves for water, steam,
+                chemicals, high pressure...
+              </p>
+            </div>
+          </div>
+
+          <!-- INFO BOX-2 -->
+          <div class="info__box">
+            <div class="info__box-img">
+              <img
+                src="assets/img/svg/valves-info/butterfly-valve.svg"
+                alt="butterfly-valve"
+              />
+            </div>
+            <div class="info__box-description dropdown">
+              <div class="info__box-select select">
+                <h3 class="fs-title-tertiary fw-bold info__box-title">
+                  Butterfly Valves
+                </h3>
+                <button type="button" class="info__box-btn chevron">
+                  <img
+                    src="assets/img/svg/valves-info/chevron-down.svg"
+                    alt="chevron-down"
+                  />
+                </button>
+              </div>
+              <p class="fs-350 info__box-description--content content">
+                Comprehensive range of Butterfly Valves for general industrial,
+                mining and agricultural applications. Sizes from 50mm to 2400mm
+                in wafer, lugged and flanged. All are available with manual,
+                electric or pneumatic actuation (double acting or spring...
+              </p>
+            </div>
+          </div>
+
+          <!-- INFO BOX-3 -->
+          <div class="info__box">
+            <div class="info__box-img">
+              <img
+                src="assets/img/svg/valves-info/ball-valve.svg"
+                alt="ball-valve"
+              />
+            </div>
+            <div class="info__box-description dropdown">
+              <div class="info__box-select select">
+                <h3 class="fs-title-tertiary fw-bold info__box-title">
+                  Ball Valves
+                </h3>
+                <button type="button" class="info__box-btn chevron">
+                  <img
+                    src="assets/img/svg/valves-info/chevron-down.svg"
+                    alt="chevron-down"
+                  />
+                </button>
+              </div>
+              <p class="fs-350 info__box-description--content content">
+                Ball valve range includes 316 stainless steel, nickel plated
+                brass, UPVC, 2 way, 3 way, threaded, flanged and fire safe. All
+                ball valves are available with pneumatic, electric and manual
+                operation. Well known for their durability and reliability.
+              </p>
+            </div>
+          </div>
+
+          <!-- INFO BOX-4 -->
+          <div class="info__box">
+            <div class="info__box-img">
+              <img
+                src="assets/img/svg/valves-info/check-valve.svg"
+                alt="check-valve"
+              />
+            </div>
+            <div class="info__box-description dropdown">
+              <div class="info__box-select select">
+                <h3 class="fs-title-tertiary fw-bold info__box-title">
+                  Check Valves
+                </h3>
+                <button type="button" class="info__box-btn chevron">
+                  <img
+                    src="assets/img/svg/valves-info/chevron-down.svg"
+                    alt="chevron-down"
+                  />
+                </button>
+              </div>
+              <p class="fs-350 info__box-description--content content">
+                Check Valves from 50mm to 3500mm in both Cast Iron and 316
+                Stainless Steel. Models include swing, piston, ball, pilot and
+                duck bill. Applications include mining, mineral processing,
+                power industries, sewerage, tidal and water treatment.
+              </p>
+            </div>
+          </div>
+
+          <!-- INFO BOX-5 -->
+          <div class="info__box">
+            <div class="info__box-img">
+              <img
+                src="assets/img/svg/valves-info/globe-valve.svg"
+                alt="globe-valve"
+              />
+            </div>
+            <div class="info__box-description dropdown">
+              <div class="info__box-select select">
+                <h3 class="fs-title-tertiary fw-bold info__box-title">
+                  Globe Valves
+                </h3>
+                <button type="button" class="info__box-btn chevron">
+                  <img
+                    src="assets/img/svg/valves-info/chevron-down.svg"
+                    alt="chevron-down"
+                  />
+                </button>
+              </div>
+              <p class="fs-350 info__box-description--content content">
+                Process Systems has a range of globe valves (shut-off valves) in
+                both threaded and flanged options. Materials include cast steel
+                from DN 50 (50 mm) to DN 300 (300 mm) and 316 Stainless Steel.
+                Great for controlling steam and other media.
+              </p>
+            </div>
+          </div>
+
+          <!-- INFO BOX-6 -->
+          <div class="info__box">
+            <div class="info__box-img">
+              <img
+                src="assets/img/svg/valves-info/gate-valve.svg"
+                alt="gate-valve"
+              />
+            </div>
+            <div class="info__box-description dropdown">
+              <div class="info__box-select select">
+                <h3 class="fs-title-tertiary fw-bold info__box-title">
+                  Gate Valves
+                </h3>
+                <button type="button" class="info__box-btn chevron">
+                  <img
+                    src="assets/img/svg/valves-info/chevron-down.svg"
+                    alt="chevron-down"
+                  />
+                </button>
+              </div>
+              <p class="fs-350 info__box-description--content content">
+                Gate Valves from 50mm to 3500mm. Body materials Ductile Iron,
+                316 Stainless Steel & Cast Steel with resileant (soft) and metal
+                seat options. Applications include mining, mineral processing,
+                power industries, sewerage and water treatment.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==== GUIDE ==== -->
+      <section class="guide">
+        <div class="container">
+          <div class="guide__box even-columns">
+            <div class="guide__box-left">
+              <div class="guide__box-wrap">
+                <img src="assets/img/svg/guide/books.svg" alt="books" />
+                <h2 class="guide__box-title fs-title-secondary">References</h2>
+              </div>
+              <p class="guide__box-txt">
+                Helpful range of references including flange tables, chemical
+                compatibility, flow rates, sizing charts, thread tables, ISO
+                mounting configurations, valve terminology and much more. If
+                you’re having any troubles, doubts or just looking for an
+                additional info, check out our references.
+              </p>
+              <button
+                type="button"
+                class="guide__box-left--btn txt-clr-secondary"
+              >
+                View Now
+              </button>
+            </div>
+
+            <div class="guide__box-right">
+              <div class="guide__box-wrap">
+                <img src="assets/img/svg/guide/book.svg" alt="book" />
+                <h2 class="guide__box-title fs-title-secondary">
+                  Buyers Guide
+                </h2>
+              </div>
+              <p class="guide__box-txt">
+                First time shopping with us or dealing with valves in general?
+                We got you covered. ValvesOnline has made a special, free PDF
+                brochure for our users. It contains all the neccessary
+                information and guidelines for buying a perfect valve or
+                whatever else from our wide range of products.
+              </p>
+              <button
+                type="button"
+                class="guide__box-right--btn txt-clr-secondary"
+              >
+                Download
+              </button>
+            </div>
+          </div>
+
+          <div class="guide__bottom">
+            <h3 class="guide__bottom-title fs-title-tertiary fw-semi-bold">
+              Working with the Experts
+            </h3>
+            <p class="guide__bottom-content">
+              As longtime experts in the field, we understand the importance of
+              ensuring that our team is equipped to meet your needs. That’s why
+              our offices are filled with qualified engineers with a huge amount
+              of collective experience. Dedicated to the process control
+              industry and with an ISO 9001 approval, Process Systems works
+              closely with you in order to ensure that you’re purchasing the
+              right product for your specific needs. We can also work with you
+              to devise solutions to specific issues that you’re facing on your
+              job site, providing advice on the right products for the right
+              job.
+              <span class="txt-clr-tertiary guide__bottom-more fw-bold"
+                >Read More...</span
+              >
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==== FACILITY ==== -->
+      <section class="facility">
+        <div class="container">
+          <div class="facility__container">
+            <div class="facility__box">
+              <img
+                src="assets/img/svg/facility/award.svg"
+                class="facility__box-icon"
+                alt="award"
+              />
+              <h3 class="fs-700 fw-bold">QUALITY</h3>
+              <span class="fs-350">You Can Trust</span>
+            </div>
+            <div class="facility__box">
+              <img
+                src="assets/img/svg/facility/shield.svg"
+                class="facility__box-icon"
+                alt="shield"
+              />
+              <h3 class="fs-700 fw-bold">FULL</h3>
+              <span class="fs-350">Manufacturer’s Warranty</span>
+            </div>
+            <div class="facility__box">
+              <img
+                src="assets/img/svg/facility/shipping.svg"
+                class="facility__box-icon"
+                alt="shipping"
+              />
+              <h3 class="fs-700 fw-bold">FREE</h3>
+              <span class="fs-350">Shipping Australia Wide</span>
+            </div>
+            <div class="facility__box">
+              <img
+                src="assets/img/svg/facility/despatch.svg"
+                class="facility__box-icon"
+                alt="despatch"
+              />
+              <h3 class="fs-700 fw-bold">SAME DAY</h3>
+              <span class="fs-350">Despatch</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ==== FOOTER ==== -->
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__intro">
+          <img
+            src="assets/img/svg/footer/logo.svg"
+            alt="website-logo"
+            class="footer__logo"
+          />
+          <p class="footer__info">
+            At the forefront of the process control industry within Australia
+            and the Pacific region since 1989.
+          </p>
+          <div class="footer__social">
+            <span>Follow us:</span>
+            <ul class="footer__social-box">
+              <li>
+                <a href="#"
+                  ><img src="assets/img/svg/footer/tw.svg" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="assets/img/svg/footer/linke.svg" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="assets/img/svg/footer/yt.svg" alt=""
+                /></a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__guide">
+            <img src="assets/img/svg/footer/guide-1.svg" alt="" />
+            <img src="assets/img/svg/footer/guide-2.svg" alt="" />
+          </div>
+        </div>
+
+        <div class="footer__main">
+          <div class="footer__main-box dropdown">
+            <div class="footer__main-info select">
+              <span class="footer__main-selected selected">ABOUT US</span>
+              <button type="button" class="footer__main-chevron chevron">
+                <img src="assets/img/svg/footer/chevron-down.svg" alt="" />
+              </button>
+            </div>
+            <ul class="footer__main-menu content">
+              <li class="footer__main-item"><a href="#">About Us</a></li>
+              <li class="footer__main-item"><a href="#">Our blog</a></li>
+              <li class="footer__main-item"><a href="#">Contact Us</a></li>
+              <li class="footer__main-item"><a href="#">Premises</a></li>
+              <li class="footer__main-item"><a href="#">Projects</a></li>
+              <li class="footer__main-item">
+                <a href="#">Warranty & Warning</a>
+              </li>
+              <li class="footer__main-item"><a href="#">Youtube videos</a></li>
+            </ul>
+          </div>
+          <div class="footer__main-box dropdown">
+            <div class="footer__main-info select">
+              <span class="footer__main-selected selected">SERVICE</span>
+              <button type="button" class="footer__main-chevron chevron">
+                <img src="assets/img/svg/footer/chevron-down.svg" alt="" />
+              </button>
+            </div>
+            <ul class="footer__main-menu content">
+              <li class="footer__main-item"><a href="#">My Account</a></li>
+              <li class="footer__main-item"><a href="#">Track Order</a></li>
+              <li class="footer__main-item">
+                <a href="#">Resolution Centre</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__main-box dropdown">
+            <div class="footer__main-info select">
+              <span class="footer__main-selected selected">INFORMATION</span>
+              <button type="button" class="footer__main-chevron chevron">
+                <img src="assets/img/svg/footer/chevron-down.svg" alt="" />
+              </button>
+            </div>
+            <ul class="footer__main-menu content">
+              <li class="footer__main-item"><a href="#">Terms of Use</a></li>
+              <li class="footer__main-item"><a href="#">Privacy Policy</a></li>
+              <li class="footer__main-item"><a href="#">Returns Policy</a></li>
+              <li class="footer__main-item"><a href="#">Security Policy</a></li>
+              <li class="footer__main-item">
+                <a href="#">Product Warranty & Warning</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__main-box dropdown">
+            <div class="footer__main-info select">
+              <span class="footer__main-selected selected">CONTACT</span>
+              <button type="button" class="footer__main-chevron chevron">
+                <img src="assets/img/svg/footer/chevron-down.svg" alt="" />
+              </button>
+            </div>
+            <ul class="footer__main-menu content">
+              <li class="footer__main-item">
+                <a href="#">1300 887 880</a>
+              </li>
+              <li class="footer__main-item">
+                <a href="#">sales@processsystems.com.au</a>
+              </li>
+              <li class="footer__main-item">
+                <a href="#">4/308 New Cleveland Road, TINGALPA, QLD, 4173</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <button
+            type="button"
+            id="scrollTop"
+            class="footer__bottom-btn-up bg-clr-secondary"
+          >
+            <img
+              src="assets/img/svg/footer/chevron-up.svg"
+              alt="scroll-to-top"
+            />
+          </button>
+        </div>
+      </div>
+
+      <div class="footer__line"></div>
+      <div class="footer__copyright container">
+        <p class="footer__copyright-year">
+          Copyright © <span id="year">&nbsp;</span> Process Systems
+        </p>
+        <div class="footer__copyright-cards">
+          <a href=""
+            ><img src="assets/img/svg/footer/visa.svg" alt="visa-card"
+          /></a>
+          <a href=""
+            ><img src="assets/img/svg/footer/master.svg" alt="master-card"
+          /></a>
+          <a href=""
+            ><img src="assets/img/svg/footer/paypal.svg" alt="paypal-card"
+          /></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

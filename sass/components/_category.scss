@@ -1,0 +1,141 @@
+/* ====== POPULAR CATEGORIES ====== */
+
+.popular {
+  margin-top: 3.625rem;
+
+  // MIXINS
+  &__title {
+    @include title;
+  }
+
+  // Here we create a column layout with grid-auto-flow
+  &__slides {
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 1.5625rem;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  &__snaps-inline {
+    scroll-snap-type: inline mandatory;
+
+    & > * {
+      scroll-snap-align: start;
+    }
+  }
+
+  &__item {
+    display: flex;
+    text-align: center;
+    width: 14.4375rem;
+    height: 16.75rem;
+    background-color: var(--clr-grey-300);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 1rem;
+
+    & > img {
+      inline-size: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: contain;
+    }
+
+    &-name {
+      line-height: var(--fs-900);
+      width: min-content;
+    }
+  }
+}
+
+/* ====== SHOP BY CATEGORY ====== */
+
+.shop {
+  margin-top: 4.375rem;
+
+  &__title {
+    @include title;
+  }
+
+  &__box {
+    display: grid;
+    column-gap: 0.5rem;
+    // 44px
+    row-gap: 2.75rem;
+
+    &-divider {
+      display: none;
+      width: 0;
+    }
+  }
+
+  &__item {
+    display: grid;
+    grid-template-columns: max-content min-content;
+    align-items: center;
+    // 9px
+    // column-gap: 0.5625rem;
+    column-gap: 0.4rem;
+
+    & > img {
+      grid-row: 1 / span 2;
+    }
+
+    & > p {
+      align-self: end;
+      width: max-content;
+    }
+
+    & > a {
+      align-self: start;
+      width: max-content;
+    }
+  }
+}
+
+.popular__slides {
+  @media (min-width: 480px) {
+    column-gap: 1.9375rem;
+  }
+}
+
+/* Desktops and laptops ----------- */
+// RESPONSIVE MEDIA
+.shop {
+  @media (min-width: 1224px) {
+    &__box {
+      grid-template-columns: repeat(11, 1fr);
+      &-divider {
+        display: inline-block;
+        width: 0.7px;
+        height: 102px;
+        background: var(--clr-grey-700);
+        margin: auto;
+      }
+    }
+    &__item {
+      column-gap: 20px;
+
+      & > p {
+        font-size: 18px;
+      }
+    }
+  }
+
+  @media (min-width: 360px) and (max-width: 1224px) {
+    &__box {
+      grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+      column-gap: 1.2rem;
+    }
+  }
+  @media (min-width: 360px) and (max-width: 480px) {
+    &__box {
+      column-gap: 0.8rem;
+    }
+  }
+}
